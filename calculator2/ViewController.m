@@ -8,7 +8,9 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController (){
+    int x;
+}
 
 @end
 
@@ -103,6 +105,15 @@
 }
 
 - (IBAction)henkan1:(id)sender {
+    
+    if((nownumber = nownumber % 2)==0){
+        
+    }
+    
+    else(){
+        
+    }
+
 }
 
 - (IBAction)henkan2:(id)sender {
