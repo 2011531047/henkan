@@ -106,17 +106,18 @@
 
 - (IBAction)henkan1:(id)sender {
     
-    if((nownumber = nownumber % 2)==0){
-        
-    }
-    
-    else(){
-        
-    }
-
 }
 
 - (IBAction)henkan2:(id)sender {
+    NSString *henkan = @"";
+    while (true) {
+        henkan = [NSString stringWithFormat:@"%d%@",nownumber % 2,henkan];
+        nownumber = nownumber / 2;
+        if (nownumber == 0) {
+            break;
+        }
+    }
+    _result2.text = henkan;
 }
 
 @end
